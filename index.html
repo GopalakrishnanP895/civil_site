@@ -523,6 +523,35 @@
 
             });
         });
+
+        var menuItems     = $('.nav-link');
+
+        //menu toggle between hamburger and close icon
+        $('#menu_btn').on('click',(e) => {
+            hideAndShowElement($('.navbar-toggler-icon'));
+            hideAndShowElement($('.close_icon'));
+        });
+
+        //menu items click event
+        menuItems.on('click', (e) => {
+            menuItems.removeClass('active_menu');   
+            $(e.target).toggleClass('active_menu');
+            $('.navbar-collapse.collapse').removeClass('show');
+            hideAndShowElement($('.navbar-toggler-icon'));
+            hideAndShowElement($('.close_icon'));
+        });
+
+        //menu icon hiding operations
+        function hideAndShowElement(element) {
+                
+            if(element.hasClass('d-block')){
+                element.removeClass('d-block')
+                element.addClass('d-none')
+            }else{
+                element.removeClass('d-none')
+                element.addClass('d-block')
+            }
+        }
         
     </script>
 
