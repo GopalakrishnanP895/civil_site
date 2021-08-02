@@ -1,4 +1,4 @@
-const menuItems     = $('.nav-link');
+var menuItems     = $('.nav-link');
 
 //menu toggle between hamburger and close icon
 $('#menu_btn').on('click',(e) => {
@@ -16,7 +16,7 @@ menuItems.on('click', (e) => {
 });
 
 //menu icon hiding operations
-const hideAndShowElement = (element) => {
+function hideAndShowElement(element) {
         
     if(element.hasClass('d-block')){
         element.removeClass('d-block')
@@ -28,12 +28,12 @@ const hideAndShowElement = (element) => {
 }
 
 //validate email
-const validateEmail = (email) => {
+function validateEmail(email){
     const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
 }
 
-const validateForm = (e, callback) => {
+function validateForm (e, callback){
     
     e.preventDefault();
 
@@ -54,7 +54,7 @@ const validateForm = (e, callback) => {
 }
 
 //submission of forms
-const submitForm = () =>{
+function submitForm(){
     let contactForm   = $('#user_query_form').serialize();
     
     
