@@ -16,7 +16,7 @@ menuItems.on('click', (e) => {
 });
 
 //menu icon hiding operations
-function hideAndShowElement(element){
+const hideAndShowElement = (element) => {
         
     if(element.hasClass('d-block')){
         element.removeClass('d-block')
@@ -56,19 +56,21 @@ const validateForm = (e, callback) => {
 //submission of forms
 const submitForm = () =>{
     let contactForm   = $('#user_query_form').serialize();
-    $("#user_query_form").html("<p class='form_submission_text'>Thanks for contacting us our executives will get back to you shortly</p>");
     
-    // $.ajax({
-    //     type: "POST",
-    //     url: "test.php",
-    //     data: contactForm,
-    //     success: function (t) {
-    //         console.log("Submission was successful."), $("#user_query_form").text("Thanks for contacting us our executives will get back to you shortly");
-    //     },
-    //     error: function (t) {
-    //         console.log("An error occurred."), console.log(t);
-    //     },
-    // });
+    
+    $.ajax({
+        type: "POST",
+        url: "./assests/helper/email.php",
+        data: contactForm,
+        success: function (res) {
+            console.log("Submission was successful.");
+            $("#user_query_form").html("<p class='form_submission_text animate__animated animate__fadeIn'>Thanks for contacting us our executives will get back to you shortly</p>");
+        },
+        error: function (res) {
+            console.log("An error occurred.");
+            console.log(res);
+        },
+    });
 
 }
 
