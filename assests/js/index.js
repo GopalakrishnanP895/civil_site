@@ -4,24 +4,40 @@ function validateEmail(email){
     return re.test(email);
 }
 
+function addErrorClass(element){
+    element.addClass('is-invalid')
+    return true;
+}
+
+function removeErrorClass(element){
+    element.removeClass('is-invalid');
+    return false;
+}
+
 function validateForm (e, callback){
     
     e.preventDefault();
 
     let name    = $('#name');
+    let mobile  = $('#mobile');
     let email   = $('#email');
-    let message = $('#message');
+    let service = $('#cservice');
 
     //validate name
-    name.val().length < 3 ? name.addClass('is-invalid') : name.removeClass('is-invalid')
+    let hasnameError = name.val().length < 3 ? addErrorClass(name) : removeErrorClass(name);
+
+    //validate mobile
+    let hasMobileError = mobile.val().length < 10 ? addErrorClass(mobile) : removeErrorClass(mobile);
 
     //validate email
-    email.val().length < 0|| !validateEmail(email.val()) ? email.addClass('is-invalid') : email.removeClass('is-invalid');
+    let hasEmailError  = email.val().length < 0 || email.val() === '' ? '' 
+    : !validateEmail(email.val()) ? addErrorClass(email) : removeErrorClass(email); 
 
-    //validate message
-    message.val().length < 5 ? message.addClass('is-invalid') : message.removeClass('is-invalid');
+    //validate service
+    let hasServiceError = service.val() === '' ? addErrorClass(service) : removeErrorClass(service);
     
-    callback();
+    if(!hasnameError && !hasMobileError && !hasEmailError && !hasServiceError)
+        callback();
 }
 
 //submission of forms
@@ -35,7 +51,7 @@ function submitForm(){
         data: contactForm,
         success: function (res) {
             console.log("Submission was successful.");
-            $("#user_query_form").html("<p class='form_submission_text animate__animated animate__fadeIn'>Thanks for contacting us our executives will get back to you shortly</p>");
+            $(".form_submission_text").addClass('d-block');
         },
         error: function (res) {
             console.log("An error occurred.");

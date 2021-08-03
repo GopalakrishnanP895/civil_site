@@ -210,30 +210,29 @@ a.btn:hover > img{
     width: 2rem;
 }
 
-.social_media a:nth-child(2) img{
-    width: 1rem;
-    margin-right: 1rem;
-}
-
 .contact_form{
     background-color: var(--c_bg_gray);
 }
 
 
-.contact_form form input, .contact_form form textarea{
-    background-color: var(--c_white);
+.contact_form form input, .contact_form form select{
     border-radius: 1rem;
     padding: 2rem 1.5rem;
     outline: none;
     border: none;
 }
-.contact_form form textarea:focus, .contact_form form input:focus{
+
+.contact_form form select{
+    height: 100%!important;
+}
+
+.contact_form form input:focus, .contact_form form select:focus{
     outline: none;
     border: none;
     box-shadow: 0 0 0 0.2rem var(--c_green_text);
 }
 
-.contact_form form textarea::placeholder, .contact_form form input::placeholder{
+.contact_form form input::placeholder, .contact_form form select{
     color: #B3B6B7;
 }
 
@@ -292,11 +291,11 @@ footer p {
 }
 
 .form_submission_text{
-    position: absolute;
-    top: 50%;
     font-size: 1rem;
     color: var(--c_text_color_dark);
     font-weight: bold;
+    border-left: 5px solid #4cac2d;
+    background-color: #cbc1c1;
 }
 
 

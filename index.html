@@ -418,10 +418,10 @@
                         <p class="mobile mb-0 mt-4 font-weight-bold">+91 89399 07815</p>
                         <p class="email font-weight-bold">eclecticdesign@gmail.com</p>
                         <div class="social_media">
-                            <a href="https://instagram.com" class="btn">
+                            <a href="https://instagram.com" class="mr-2">
                                 <img src="./assests/images/instagram.png" alt="instagram" />
                             </a>
-                            <a href="https://facebook.com">
+                            <a href="https://facebook.com" >
                                 <img src="./assests/images/facebook.png" alt="facebook" />
                             </a>
                         </div>
@@ -429,25 +429,36 @@
                 </div>
                 <div class="col-md-6 contact_form">
                     <form class="px-3 px-md-5 py-5 mt-2" id="user_query_form" method="post">
+                        <p class="form_submission_text animate__animated animate__fadeIn p-2 mb-5 d-none">
+                            Thanks for contacting us our executives will get back to you shortly.
+                        </p>
                         <div class="form-group mb-5">
-                            <input type="text" class="form-control shadow-none" placeholder="name" name="cpname" id="name" required/>
+                            <input type="text" class="form-control" placeholder="name" name="cpname" id="name" required/>
                             <div class="invalid-feedback">
                                 Please provide a valid name.
                             </div>
                         </div>
                         <div class="form-group mb-5">
-                            <input type="email" class="form-control" placeholder="email" name="cpmail" id="email" required/>
+                            <input type="text" class="form-control" placeholder="mobile number" name="cpphone" id="mobile" />
+                            <div class="invalid-feedback">
+                                Please provide a valid mobile no.
+                            </div>
+                        </div>
+                        <div class="form-group mb-5">
+                            <input type="email" class="form-control" placeholder="email" name="cpmail" id="email" />
                             <div class="invalid-feedback">
                                 Please provide a valid email.
                             </div>
                         </div>
                         <div class="form-group mb-5">
-                            <input type="text" class="form-control" placeholder="mobile number ( optional )" name="cpphone" id="mobile" />
-                        </div>
-                        <div class="form-group mb-5">
-                            <textarea class="form-control"  rows="4" placeholder="message" name="cpmailmessage" id="message"  required></textarea>
+                            <select class="form-control" aria-label="service" id="cservice" name="cservice" required>
+                                <option value=""><span>Select your Service</span></option>
+                                <option value="Interior design">Interior design</option>
+                                <option value="3D design">3D design</option>
+                                <option value="Consultation">Consultation</option>
+                            </select>
                             <div class="invalid-feedback">
-                                Please provide a valid message.
+                                Please select a service.
                             </div>
                         </div>
                         <div class="form-group d-md-flex justify-content-center">
