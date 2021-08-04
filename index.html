@@ -25,28 +25,32 @@
     <!-- animate css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <!-- custom css -->
-    <link rel="stylesheet" href="./assests/css/style.css">
+    <!-- css gallery -->
+    <link rel="stylesheet" href="./assests/css/imagebox.min.css" />
 
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assests/css/style.css" />
+
+    
 </head>
 <body>
     
     <!-- header -->
     <header class="container-fluid bg-light position-fixed">
-        <div class="container ">
-            <nav class="navbar navbar-expand-lg navbar-light p-0">
-                <a href="#" class="navbar-brand w-50">
+        <!-- <div class="container "> -->
+            <nav class="navbar navbar-light p-0">
+                <a href="#" class="navbar-brand w-50 ml-md-2">
                     <img src="./assests/images/logo.png" alt="logo" width="185"  />
                 </a>
                 <button class="navbar-toggler" id="menu_btn" type="button" data-toggle="collapse" data-target="#menubar" aria-controls="menubar" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon d-block"></span>
-                    <span aria-hidden="true" class="close_icon d-none">&times;</span>
+                    <span class="navbar-toggler-icon d-block animate__animated animate__fadeIn"></span>
+                    <span aria-hidden="true" class="close_icon d-none animate__animated animate__fadeIn animate__delay-1s">&times;</span>
 
                 </button>
 
                 <!-- menu's -->
-                <div class="collapse navbar-collapse w-50" id="menubar">
-                    <ul class="navbar-nav w-md-80 mx-xs-auto ml-md-auto">
+                <div class="collapse navbar-collapse animate__animated animate__fadeIn" id="menubar">
+                    <ul class="navbar-nav text-center">
                         <li class="nav-item ml-md-4">
                             <a href="#service" class="nav-link text_color_dark">Services</a>
                         </li>
@@ -59,29 +63,29 @@
                     </ul>
                 </div>
             </nav>
-        </div>
+        <!-- </div> -->
     </header>
     <!-- header -->
 
-    <div class="p-3"></div>
+    <div class="p-4"></div>
 
     <!-- banner -->
-    <section class="banner">
+    <section class="banner  mt-1">
         <div class="container-fluid p-0">
             <div class="row m-0 w-100">
                 <div class="banner_content col-md-8 d-flex align-items-center pt-md-5">
-                    <div class="banner_title_sec_height text_color_dark">
-                        <h1 class="banner_title font-weight-bold mt-md-5 animate__animated animate__fadeInUp">We design the experience <br />You experience the design</h1>
-                        <p class="title_desc text_color_dark text-justify mt-2 mt-md-5 animate__animated animate__fadeInUp animate__delay-1s">We are extremly thoughtful interior design studio based on chennai. 
+                    <div class="banner_title_sec_height text_color_dark animate__animated animate__fadeIn">
+                        <h1 class="banner_title font-weight-bold mt-md-5">We design the experience <br />You experience the design</h1>
+                        <p class="title_desc text_color_dark text-justify mt-2 mt-md-5">We are extremly thoughtful interior design studio based on chennai. 
                             We believe that the power of art, architecture and design thinking 
                             can create pleasantness in the world. With passion and international 
                             expertise we create human-centric designs that balance creative 
                             aesthetics and functionality.</p>
-                        <a href="#contactus" class="btn consult_btn btn-lg mt-md-5 animate__animated animate__fadeInUp animate__delay-2s">Let's talk <img src="./assests/images/right_arrow_light.png" class="right_arrow_light" /> </a>
+                        <a href="#contactus" class="btn consult_btn btn-lg mt-md-5">Let's talk <img src="./assests/images/right_arrow_light.png" class="right_arrow_light" /> </a>
                     </div>
                 </div>
                 <div class="banner_image w-100 col-md-4 no-gutters p-0 d-flex justify-content-end">
-                    <div class="banner_image_placeholder animate__animated animate__fadeIn ">
+                    <div class="banner_image_placeholder animate__animated animate__fadeIn">
 
                     </div>
                 </div>
@@ -95,15 +99,15 @@
         <div class="container">
             <div class="banner_video_section my-5">
                 <div class="row no-gutters py-5">
-                    <div class="banner_video col-md-6 py-2 d-flex align-items-center animate__animated animate__fadeInLeft">
+                    <div class="banner_video col-md-6 py-2 d-flex align-items-center animate__animated animate__fadeIn">
                         <video id="my-video" class="video-js vjs-theme-city" controls  preload="auto" data-setup="{}">
                             <source src="./assests/images/video.mp4" type="video/mp4" />
                         </video>
                     </div>
-                    <div class="banner_video_description col-md-6 py-2 px-md-5 animate__animated animate__fadeInRight">
+                    <div class="banner_video_description col-md-6 py-2 px-md-5 animate__animated animate__fadeIn">
                         <h1 class="text_color_dark font-weight-bold mt-5 mt-md-0">Why Eclectic?</h1>
-                        <p class="title_desc mt-3 mt-md-4 text_color_dark text-justify">we have successfully completed more than 35 projects from small scale residences to large commercial projects in last 3 years with 100% client statisfaction. Our Transparency, commitment & work ethics are our pillars of stable growth. We personally work with clients at every step to deliver a space that truly fits thier style & budget.</p>
-                        <a href="#contactus" class="btn consult_btn btn-lg mt-4">Consult now  <img src="./assests/images/right_arrow_light.png" class="right_arrow_light" /></a>
+                        <p class="title_desc mt-3 mt-md-4 text_color_dark text-justify">We have successfully completed more than 35 projects from small scale residences to large commercial projects in last 3 years with 100% client satisfaction. Our Transparency, commitment & work ethics are our pillars of stable growth. We personally work with clients at every step to deliver a space that truly fits thier style & budget.</p>
+                        <!-- <a href="#contactus" class="btn consult_btn btn-lg mt-4">Consult now  <img src="./assests/images/right_arrow_light.png" class="right_arrow_light" /></a> -->
                     </div>
                 </div>
             </div>
@@ -128,7 +132,7 @@
                             <div class="col-xs-12 col-md-8">
                                 <div class="card-body py-5 p-md-5">
                                     <h3 class="card-title font-weight-bold pb-3">Full service interior design</h3>
-                                    <p class="card-text text_color_dark">We provide personalized turn-key service to our clients where all that’s left for the client is to make design approvals and wait for their space to be transformed. From the initial consultation to the final execution we will walk them through every step of the design process. We specialize in seamlessly transforming new homes to make it ready for occupancy or give a complete makeover to spaces including renovation. We take quality so seriously, that we only use the finest materials and finishes in all our projects.</p>
+                                    <p class="card-text text_color_dark text-justify">We provide personalized turn-key service to our clients where all that’s left for the client is to make design approvals and wait for their space to be transformed. From the initial consultation to the final execution we will walk them through every step of the design process. We specialize in seamlessly transforming new homes to make it ready for occupancy or give a complete makeover to spaces including renovation. We take quality so seriously, that we only use the finest materials and finishes in all our projects.</p>
                                     <a href="#contactus" class="btn consult_btn btn-lg mt-4">Consult now  <img src="./assests/images/right_arrow_light.png" class="right_arrow_light" /></a>                                  
                                 </div>
                             </div>
@@ -145,7 +149,7 @@
                             <div class="col-xs-12">
                                 <div class="card-body py-5">
                                     <h3 class="card-title font-weight-bold pb-3">3D design</h3>
-                                    <p class="card-text text_color_dark">Clients can imagine their home before they even step in! We create stunning interior concepts in 3D, using advanced technologies to give a real feel of what a completed home would look like. We take time to understand the needs of the clients and recommend the right solutions tailored to their taste by shaping our combined ideas to reality.</p>
+                                    <p class="card-text text_color_dark text-justify">Clients can imagine their home before they even step in! We create stunning interior concepts in 3D, using advanced technologies to give a real feel of what a completed home would look like. We take time to understand the needs of the clients and recommend the right solutions tailored to their taste by shaping our combined ideas to reality.</p>
                                     <a href="#contactus" class="btn consult_btn btn-lg mt-4">Consult now  <img src="./assests/images/right_arrow_light.png" class="right_arrow_light" /></a>                                  
                                 </div>
                             </div>
@@ -162,7 +166,7 @@
                             <div class="col-xs-12">
                                 <div class="card-body py-5">
                                     <h3 class="card-title font-weight-bold pb-3">Consultation</h3>
-                                    <p class="card-text text_color_dark">Our version of design helpline! We keenly listen to our client’s decor dilemmas, vision for the space. We will then discuss what is working for them in each space and come up with a tailor-made solution for them..</p>
+                                    <p class="card-text text_color_dark text-justify">Our version of design helpline! We keenly listen to our client’s decor dilemmas, vision for the space. We will then discuss what is working for them in each space and come up with a tailor-made solution for them.</p>
                                     <a href="#contactus" class="btn consult_btn btn-lg mt-4">Consult now  <img src="./assests/images/right_arrow_light.png" class="right_arrow_light" /></a>                                  
                                 </div>
                             </div>
@@ -183,180 +187,180 @@
             <h1 class="section_title font-weight-bold position-absolute">Our Works</h1>
             <div class="work_carousel owl-carousel owl-theme position-relative animate__animated animate__fadeIn">
                 <div class="item work_card">
-                    <img src="./assests/images/1 bedroom a/Eclectic-interior-bedroom-1a-design-chennai.jpg" alt="" class="w-100">
+                    <img src="./assests/images/1 bedroom a/Eclectic-interior-bedroom-1a-design-chennai.jpg" alt="" class="w-100" data-imagebox="gallery" />
                     <div class="image_desc">
                         <p class="text-center text_color_dark">Bedroom design, Chennai</p>
                     </div>
                 </div>
                 <div class="item work_card">
-                    <img src="./assests/images/1 bedroom a/Eclectic-interior-bedroom-1b-design-chennai.jpg" alt="" class="w-100">
+                    <img src="./assests/images/1 bedroom a/Eclectic-interior-bedroom-1b-design-chennai.jpg" alt="" class="w-100" data-imagebox="gallery" />
                     <div class="image_desc">
                         <p class="text-center text_color_dark">Bedroom design, Chennai</p>
                     </div>
                 </div>
                 <div class="item work_card">
-                    <img src="./assests/images/1 bedroom a/Eclectic-interior-bedroom-1c-design-chennai.jpg" alt="" class="w-100">
+                    <img src="./assests/images/1 bedroom a/Eclectic-interior-bedroom-1c-design-chennai.jpg" alt="" class="w-100" data-imagebox="gallery"  />
                     <div class="image_desc">
                         <p class="text-center text_color_dark">Bedroom design, Chennai</p>
                     </div>
                 </div>
                 <div class="item work_card">
-                    <img src="./assests/images/1 bedroom a/Eclectic-interior-bedroom-1d-design-chennai.jpg" alt="" class="w-100">
+                    <img src="./assests/images/1 bedroom a/Eclectic-interior-bedroom-1d-design-chennai.jpg" alt="" class="w-100" data-imagebox="gallery"  />
                     <div class="image_desc">
                         <p class="text-center text_color_dark">Bedroom design, Chennai</p>
                     </div>
                 </div>
                 <div class="item work_card">
-                    <img src="./assests/images/1 bedroom a/Eclectic-interior-bedroom-1e-design-chennai.jpg" alt="" class="w-100">
+                    <img src="./assests/images/1 bedroom a/Eclectic-interior-bedroom-1e-design-chennai.jpg" alt="" class="w-100" data-imagebox="gallery"  />
                     <div class="image_desc">
                         <p class="text-center text_color_dark">Bedroom design, Chennai</p>
                     </div>
                 </div>
                 <div class="item work_card">
-                    <img src="./assests/images/2 kitchen a/Eclectic-interior-kitchen-design-1a-chennai.jpg" alt="" class="w-100">
+                    <img src="./assests/images/2 kitchen a/Eclectic-interior-kitchen-design-1a-chennai.jpg" alt="" class="w-100" data-imagebox="gallery"  />
                     <div class="image_desc">
                         <p class="text-center text_color_dark">Kitchen Renovation, Chennai</p>
                     </div>
                 </div>
                 <div class="item work_card">
-                    <img src="./assests/images/2 kitchen a/Eclectic-interior-kitchen-design-1b-chennai.jpg" alt="" class="w-100">
+                    <img src="./assests/images/2 kitchen a/Eclectic-interior-kitchen-design-1b-chennai.jpg" alt="" class="w-100" data-imagebox="gallery"  />
                     <div class="image_desc">
                         <p class="text-center text_color_dark">Kitchen Renovation, Chennai</p>
                     </div>
                 </div>
                 <div class="item work_card">
-                    <img src="./assests/images/2 kitchen a/Eclectic-interior-kitchen-design-1c-chennai.jpg" alt="" class="w-100">
+                    <img src="./assests/images/2 kitchen a/Eclectic-interior-kitchen-design-1c-chennai.jpg" alt="" class="w-100" style="object-position: 98% 100%;" data-imagebox="gallery"  />
                     <div class="image_desc">
                         <p class="text-center text_color_dark">Kitchen Renovation, Chennai</p>
                     </div>
                 </div>
                 <div class="item work_card">
-                    <img src="./assests/images/4 kitchen b/Eclectic-interior-kitchen-design-2a-chennai.jpg" alt="" class="w-100">
+                    <img src="./assests/images/4 kitchen b/Eclectic-interior-kitchen-design-2a-chennai.jpg" alt="" class="w-100" data-imagebox="gallery"  />
                     <div class="image_desc">
                         <p class="text-center text_color_dark">Kitchen Renovation, Chennai</p>
                     </div>
                 </div>
                 <div class="item work_card">
-                    <img src="./assests/images/4 kitchen b/Eclectic-interior-kitchen-design-2b-chennai.jpg" alt="" class="w-100">
+                    <img src="./assests/images/4 kitchen b/Eclectic-interior-kitchen-design-2b-chennai.jpg" alt="" class="w-100" data-imagebox="gallery"  />
                     <div class="image_desc">
                         <p class="text-center text_color_dark">Kitchen Renovation, Chennai</p>
                     </div>
                 </div>
                 <div class="item work_card">
-                    <img src="./assests/images/5 kitchen d/Eclectic-interior-kitchen-design-4b-chennai.jpg" alt="" class="w-100">
+                    <img src="./assests/images/5 kitchen d/Eclectic-interior-kitchen-design-4b-chennai.jpg" alt="" class="w-100" style="object-position: 46% 100%" data-imagebox="gallery"  />
                     <div class="image_desc">
                         <p class="text-center text_color_dark">Kitchen Renovation, Chennai</p>
                     </div>
                 </div>
                 <div class="item work_card">
-                    <img src="./assests/images/6 powder room/Eclectic-Interior-party-hall-design-chennai-interiors-b.jpg" alt="" class="w-100">
+                    <img src="./assests/images/6 powder room/Eclectic-Interior-party-hall-design-chennai-interiors-b.jpg" alt="" class="w-100" data-imagebox="gallery"  />
                     <div class="image_desc">
                         <p class="text-center text_color_dark">Powder room, Chennai</p>
                     </div>
                 </div>
                 <div class="item work_card">
-                    <img src="./assests/images/6 powder room/Eclectic-Interior-powder-room-design-chennai-interiors-a.jpg" alt="" class="w-100">
+                    <img src="./assests/images/6 powder room/Eclectic-Interior-powder-room-design-chennai-interiors-a.jpg" alt="" class="w-100" data-imagebox="gallery"  />
                     <div class="image_desc">
                         <p class="text-center text_color_dark">Powder room, Chennai</p>
                     </div>
                 </div>
                 <div class="item work_card">
-                    <img src="./assests/images/7 home theatre/Eclectic-interior-chennai-home-theatre-design-a.jpg" alt="" class="w-100">
+                    <img src="./assests/images/7 home theatre/Eclectic-interior-chennai-home-theatre-design-a.jpg" alt="" class="w-100" data-imagebox="gallery"  >/
                     <div class="image_desc">
                         <p class="text-center text_color_dark">Home Theatre, Chennai</p>
                     </div>
                 </div>
                 <div class="item work_card">
-                    <img src="./assests/images/7 home theatre/Eclectic-interior-chennai-home-theatre-design-b.jpg" alt="" class="w-100">
+                    <img src="./assests/images/7 home theatre/Eclectic-interior-chennai-home-theatre-design-b.jpg" alt="" class="w-100" data-imagebox="gallery"  />
                     <div class="image_desc">
                         <p class="text-center text_color_dark">Home Theatre, Chennai</p>
                     </div>
                 </div>
                 <div class="item work_card">
-                    <img src="./assests/images/8 la alegria/Eclectic-Interior-office-design-chennai-interiors-a.jpg" alt="" class="w-100">
+                    <img src="./assests/images/8 la alegria/Eclectic-Interior-office-design-chennai-interiors-a.jpg" alt="" class="w-100" data-imagebox="gallery" />
                     <div class="image_desc">
                         <p class="text-center text_color_dark">Office Interior design, Chennai</p>
                     </div>
                 </div>
                 <div class="item work_card">
-                    <img src="./assests/images/8 la alegria/Eclectic-Interior-office-design-chennai-interiors-b.jpg" alt="" class="w-100">
+                    <img src="./assests/images/8 la alegria/Eclectic-Interior-office-design-chennai-interiors-b.jpg" alt="" class="w-100" data-imagebox="gallery"  />
                     <div class="image_desc">
                         <p class="text-center text_color_dark">Office Interior design, Chennai</p>
                     </div>
                 </div>
                 <div class="item work_card">
-                    <img src="./assests/images/9 restaurant/Eclectic-Interior-cornel-restaurant-design-chennai-interiors-a.jpg" alt="" class="w-100">
+                    <img src="./assests/images/9 restaurant/Eclectic-Interior-cornel-restaurant-design-chennai-interiors-a.jpg" alt="" class="w-100" style="object-position: 98% 100%;" data-imagebox="gallery"  />
                     <div class="image_desc">
                         <p class="text-center text_color_dark">Restaurant design, Chennai</p>
                     </div>
                 </div>
                 <div class="item work_card">
-                    <img src="./assests/images/9 restaurant/Eclectic-Interior-cornel-restaurant-design-chennai-interiors-b.jpg" alt="" class="w-100">
+                    <img src="./assests/images/9 restaurant/Eclectic-Interior-cornel-restaurant-design-chennai-interiors-b.jpg" alt="" class="w-100" data-imagebox="gallery"  />
                     <div class="image_desc">
                         <p class="text-center text_color_dark">Restaurant design, Chennai</p>
                     </div>
                 </div>
                 <div class="item work_card">
-                    <img src="./assests/images/9 restaurant/Eclectic-Interior-cornel-restaurant-design-chennai-interiors-c.jpg" alt="" class="w-100">
+                    <img src="./assests/images/9 restaurant/Eclectic-Interior-cornel-restaurant-design-chennai-interiors-c.jpg" alt="" class="w-100" style="object-position: 99% 100%;" data-imagebox="gallery"  />
                     <div class="image_desc">
                         <p class="text-center text_color_dark">Restaurant design, Chennai</p>
                     </div>
                 </div>
                 <div class="item work_card">
-                    <img src="./assests/images/10 base/Eclectic-interior-cabin-design-chennai.jpg" alt="" class="w-100">
+                    <img src="./assests/images/10 base/Eclectic-interior-cabin-design-chennai.jpg" alt="" class="w-100" data-imagebox="gallery"  />
                     <div class="image_desc">
                         <p class="text-center text_color_dark">Cabin design, Chennai</p>
                     </div>
                 </div>
                 <div class="item work_card">
-                    <img src="./assests/images/10 base/Eclectic-interior-conference-design-chennai.jpg" alt="" class="w-100">
+                    <img src="./assests/images/10 base/Eclectic-interior-conference-design-chennai.jpg" alt="" class="w-100" data-imagebox="gallery"  />
                     <div class="image_desc">
                         <p class="text-center text_color_dark">Conferance design, Chennai</p>
                     </div>
                 </div>
                 <div class="item work_card">
-                    <img src="./assests/images/10 base/Eclectic-interior-conferenceroom-design-chennai.jpg" alt="" class="w-100">
+                    <img src="./assests/images/10 base/Eclectic-interior-conferenceroom-design-chennai.jpg" alt="" class="w-100" data-imagebox="gallery"  />
                     <div class="image_desc">
                         <p class="text-center text_color_dark">Conferance design, Chennai</p>
                     </div>
                 </div>
                 <div class="item work_card">
-                    <img src="./assests/images/10 base/Eclectic-interior-officelobby-design-chennai.jpg" alt="" class="w-100">
+                    <img src="./assests/images/10 base/Eclectic-interior-officelobby-design-chennai.jpg" alt="" class="w-100" style="object-position: 2% 100%;" data-imagebox="gallery"  />
                     <div class="image_desc">
                         <p class="text-center text_color_dark">Office lobby design, Chennai</p>
                     </div>
                 </div>
                 <div class="item work_card">
-                    <img src="./assests/images/11 party hall/Eclectic-Interior-party-hall-design-chennai-interiors-a.jpg" alt="" class="w-100">
+                    <img src="./assests/images/11 party hall/Eclectic-Interior-party-hall-design-chennai-interiors-a.jpg" alt="" class="w-100" style="object-position: 1% 100%;" data-imagebox="gallery"  />
                     <div class="image_desc">
                         <p class="text-center text_color_dark">Party hall design, Chennai</p>
                     </div>
                 </div>
                 <div class="item work_card">
-                    <img src="./assests/images/11 party hall/Eclectic-Interior-party-hall-design-chennai-interiors-b.jpg" alt="" class="w-100">
+                    <img src="./assests/images/11 party hall/Eclectic-Interior-party-hall-design-chennai-interiors-d.jpg" alt="" class="w-100" data-imagebox="gallery"  />
                     <div class="image_desc">
                         <p class="text-center text_color_dark">Party hall design, Chennai</p>
                     </div>
                 </div>
                 <div class="item work_card">
-                    <img src="./assests/images/11 party hall/Eclectic-Interior-party-hall-design-chennai-interiors-c.jpg" alt="" class="w-100">
+                    <img src="./assests/images/11 party hall/Eclectic-Interior-party-hall-design-chennai-interiors-e.jpg" alt="" class="w-100" style="object-position: 87% 100%;" data-imagebox="gallery"  />
                     <div class="image_desc">
                         <p class="text-center text_color_dark">Party hall design, Chennai</p>
                     </div>
                 </div>
                 <div class="item work_card">
-                    <img src="./assests/images/11 party hall/Eclectic-Interior-party-hall-design-chennai-interiors-d.jpg" alt="" class="w-100">
+                    <img src="./assests/images/11 party hall/Eclectic-Interior-party-hall-design-chennai-interiors-b.jpg" alt="" class="w-100" data-imagebox="gallery"  />
                     <div class="image_desc">
                         <p class="text-center text_color_dark">Party hall design, Chennai</p>
                     </div>
                 </div>
                 <div class="item work_card">
-                    <img src="./assests/images/11 party hall/Eclectic-Interior-party-hall-design-chennai-interiors-e.jpg" alt="" class="w-100">
+                    <img src="./assests/images/11 party hall/Eclectic-Interior-party-hall-design-chennai-interiors-c.jpg" alt="" class="w-100" data-imagebox="gallery"  /> 
                     <div class="image_desc">
                         <p class="text-center text_color_dark">Party hall design, Chennai</p>
                     </div>
                 </div>
-                <div class="item work_card">
+                <!-- <div class="item work_card">
                     <img src="./assests/images/11 party hall/Eclectic-Interior-party-hall-design-chennai-interiors-f.jpg" alt="" class="w-100">
                     <div class="image_desc">
                         <p class="text-center text_color_dark">Party hall design, Chennai</p>
@@ -367,7 +371,7 @@
                     <div class="image_desc">
                         <p class="text-center text_color_dark">Party hall design, Chennai</p>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         
@@ -415,13 +419,14 @@
                     <h1 class="px-3 px-md-5 py-5 font-weight-bold">Let's <br/> Connect</h1>
                     <div class="contact_info px-3 px-md-5 py-5">
                         <h3 class="info_title font-weight-bold">Support</h3>
-                        <p class="mobile mb-0 mt-4 font-weight-bold">+91 89399 07815</p>
-                        <p class="email font-weight-bold">eclecticdesign@gmail.com</p>
+                        <p class="address mb-0 mt-4 font-weight-bold mb-0">4th Floor, Kochar Bliss, A8 & A9,<br /> Thiru Vi Ka Industrial Estate, Guindy,<br/> Chennai -600032</p>
+                        <p class="mobile mb-0 mt-2 font-weight-bold">+91 89399 07815</p>
+                        <p class="email font-weight-bold">eclecticinteriorchennai@gmail.com</p>
                         <div class="social_media">
-                            <a href="https://instagram.com" class="mr-2">
+                            <a href="https://www.instagram.com/eclecticinterior.in/" class="mr-2">
                                 <img src="./assests/images/instagram.png" alt="instagram" />
                             </a>
-                            <a href="https://facebook.com" >
+                            <a href="https://www.facebook.com/Eclecticinterior.in" >
                                 <img src="./assests/images/facebook.png" alt="facebook" />
                             </a>
                         </div>
@@ -491,12 +496,17 @@
     <!-- assests js -->
     <script src="./assests/js/bootstrap.js"></script>
 
+    <!-- gallery -->
+    <!-- <script src="./assests/js/imagebox.ie.min.js"></script> -->
+    <script src="./assests/js/imagebox.min.js"></script>
+    
+   
     <script>
 
         $(document).ready(function(){
             
             $('.work_carousel').owlCarousel({
-                loop: true,
+                loop: false,
                 nav: true,
                 dots: false,
                 margin: 10,
